@@ -123,7 +123,7 @@ function CodeBlock(props) {
 }
 
 function InlineCode(props) {
-  return createElement(SyntaxHighlighter, { style: googlecode }, props.value);
+  return createElement('code', getCoreProps(props), props.value);
 }
 
 function Html(props) {
